@@ -64,7 +64,6 @@
 		412487CA218B73A700DDD2A6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				412487B8218B733100DDD2A6 /* AppDelegate.swift */,
 				412487BA218B733100DDD2A6 /* ArtViewController.swift */,
 			);
 			path = Controller;
@@ -82,6 +81,7 @@
 		412487CC218B73C900DDD2A6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				412487B8218B733100DDD2A6 /* AppDelegate.swift */,
 				412487BF218B733200DDD2A6 /* Assets.xcassets */,
 				412487C4218B733200DDD2A6 /* Info.plist */,
 			);

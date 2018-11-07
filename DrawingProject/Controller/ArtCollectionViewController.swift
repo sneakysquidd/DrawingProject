@@ -85,13 +85,16 @@ public class ArtCollectionViewController: UICollectionViewController
         return creativeCS.count
     }
 
-    public override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    public override func collectionView(_ collectionView: UICollectionView,
+                                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let artCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtCell
     
-        // Configure the cell
+        artCell.backgroundColor = .green
+        artCell.artImage.image = creativeCS[indexPath.row]
+        artCell.artLabel.text = labels[indexPath.row]
     
-        return cell
+        return artCell
     }
 
     // MARK: UICollectionViewDelegate
@@ -122,7 +125,7 @@ public class ArtCollectionViewController: UICollectionViewController
                                minimumLineSpacingForSectionAt section: Int) -> CGFloat
     {
         return sectionInsets.left
-    }0
+    }
 
     /*
     // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item

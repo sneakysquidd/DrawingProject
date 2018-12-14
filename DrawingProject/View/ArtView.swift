@@ -68,7 +68,7 @@ public class ArtView: UIView
                    radius: CGFloat(20),
                    startAngle: CGFloat(0),
                    endAngle: CGFloat(2) * CGFloat.pi,
-                   clockwise: true)
+                   clockwise: true) 
         
         gru.addArc(withCenter: CGPoint(x: 100, y: 100),
                    radius: CGFloat(40),
